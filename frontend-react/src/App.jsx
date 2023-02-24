@@ -22,7 +22,7 @@ function App() {
   const addValue = () =>{
       setNumber(num+1);
       setNumberList(previousValue =>{
-        return {...previousValue,num};
+        return [...previousValue,num];
       })
       console.log(num);
     }
