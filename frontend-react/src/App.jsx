@@ -5,12 +5,12 @@ import './App.css'
 function App() {
   // const [count, setCount] = useState(0)
   // let num=0;
-  const [num,setNumber]=useState(0);
+  const [num,setNumber]=useState(1);
   const [person,setPerson] = useState({
     name : "Sai Teja",
     age : 20
   })
-  const [numberList,setNumberList] = useState([0]);
+  const [numberList,setNumberList] = useState([1]);
 // to change a value of an object
 
   
@@ -20,15 +20,16 @@ function App() {
   //     })
   //   }
   const addValue = () =>{
-      setNumber(num+1);
+      // setNumber(num+1);
       setNumberList(previousValue =>{
+        // console.log(num);
         return [...previousValue,num];
       })
-      console.log(num);
     }
     const increaseCount = ()=>{
       setNumber(num+1);
-      // console.log(num);
+      addValue();
+      console.log(num);
     } 
   
   return (
