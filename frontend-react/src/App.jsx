@@ -10,7 +10,7 @@ function App() {
     name : "Sai Teja",
     age : 20
   })
-  const [numberList,setNumberList] = useState([]);
+  const [numberList,setNumberList] = useState([1]);
 // to change a value of an object
 
   
@@ -23,7 +23,7 @@ function App() {
       // setNumber(num+1);
       setNumberList(previousValue =>{
         // console.log(num);
-        return [...previousValue,num];
+        return [...previousValue,num+1];
       })
     }
     const increaseCount = ()=>{
